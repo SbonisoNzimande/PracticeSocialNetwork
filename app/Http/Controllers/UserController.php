@@ -8,10 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function getDashboard()
-    {
-        return view('dashboard');
-    }
+
     // sing in funtion
     public function postSignIn (Request $request)
     {
