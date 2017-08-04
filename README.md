@@ -1,2 +1,0 @@
-# PracticeSocialNetwork
-Laravel Project 
