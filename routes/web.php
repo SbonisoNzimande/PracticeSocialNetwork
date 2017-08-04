@@ -31,7 +31,17 @@ Route::post('/signin', [
     'as' =>'signin'
 ]);
 
+Route::get('/logout', [
+   'uses' => 'UserController@getLogout',
+    'as'=>'logout'
+]);
+
 Route::post('/createpost', [
     'uses' =>'PostController@postCreatePost',
     'as' => 'post.create'
+]);
+
+Route::get('/deletepost/{post_id}', [
+    'uses' =>'PostController@getDeletePost',
+    'as' => 'post.delete'
 ]);

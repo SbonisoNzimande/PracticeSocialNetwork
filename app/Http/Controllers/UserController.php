@@ -50,4 +50,10 @@ class UserController extends Controller
         return redirect()->route('dashboard');
 
     }
+
+    public  function getLogout ()
+    {
+        Auth::logout();
+        return redirect()->route('home');
+    }
 }
